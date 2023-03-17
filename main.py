@@ -69,8 +69,6 @@ if __name__ == "__main__":
         api_hash=config.api_hash,
         hide_password=True,
         workdir=script_path,
-        app_version=userbot_version,
-        device_model=f"RoboX-Userbot @ {gitrepo.head.commit.hexsha[:7]}",
         system_version=platform.version() + " " + platform.machine(),
         sleep_threshold=30,
         test_mode=config.test_server,
