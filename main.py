@@ -59,7 +59,7 @@ if __name__ == "__main__":
         logging.warning("Old config file has been successfully converted")
 
     from utils.db import db
-    from utils.misc import gitrepo, userbot_version
+    #from utils.misc import gitrepo, userbot_version
     from utils.scripts import restart
     from utils import config
 
