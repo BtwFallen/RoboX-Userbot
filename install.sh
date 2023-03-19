@@ -15,14 +15,6 @@ apt install python3 python3-pip git ffmpeg wget gnupg -y || exit 2
 su -c "python3 -m pip install -U pip" $SUDO_USER
 su -c "python3 -m pip install -U wheel pillow" $SUDO_USER
 
-if [[ -d "RoboX-Userbot" ]]; then
-  cd RoboX-Userbot
-elif [[ -f ".env.dist" ]] && [[ -f "main.py" ]] && [[ -d "modules" ]]; then
-  :
-else
-  git clone https://github.com/shraajestayu/RoboX-Userbot || exit 2
-  cd RoboX-Userbot || exit 2
-fi
 
 if [[ -f ".env" ]] && [[ -f "RoboXUser.session" ]]; then
   echo "RoboX Userbot Is Already Working Or Please Remove Old Session Via >> rm RoboXUser.session"
